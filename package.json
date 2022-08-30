@@ -1,0 +1,24 @@
+{
+  "name": "typescriptproject",
+  "vetrsion": "1.0.0",
+  "description": "",
+  "main": "../src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "serve": "cd src && live-server",
+    "server:server": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.8.2",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
