@@ -1,6 +1,6 @@
-interface Props {
+export interface Props {
   id: string;
-  optionsList: string[];
+  optionsList: any[];
   disabled?: boolean;
   defaultValue?: string;
 }
@@ -24,6 +24,7 @@ export default function (props = defaultProps) {
   };
 
   const getDropdown = (): HTMLSelectElement => {
+    console.log("successfully calling drop down");
     const input = document.createElement("select");
     input.setAttribute("type", "text");
     input.setAttribute("id", props.id);

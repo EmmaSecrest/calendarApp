@@ -17,6 +17,7 @@ function default_1(props = defaultProps) {
         return option;
     };
     const getDropdown = () => {
+        console.log("successfully calling drop down");
         const input = document.createElement("select");
         input.setAttribute("type", "text");
         input.setAttribute("id", props.id);
